@@ -10,3 +10,5 @@ module qs.modules.common.user
 #    <File> is the (relative) file name of the QML file that defines the type
 
 singleton UserConfig 1.0 UserConfig.qml
+BackgroundPattern 1.0 BackgroundPattern.qml
+ToggledListButton 1.0 ToggledListButton.qml

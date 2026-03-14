@@ -65,9 +65,10 @@
         "barMenu": true,
         "dashboard": true,
         "enabled": [
-            "TimeDesktop.qml"
+            "TimeDesktop.qml",
+            "Nier-Launcher.qml"
         ],
-        "launcher": true,
+        "launcher": false,
         "lockscreen": true,
         "mediaPlayer": true,
         "notification": true,
