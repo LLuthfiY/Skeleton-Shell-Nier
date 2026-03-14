@@ -1,0 +1,50 @@
+[config]
+
+[templates.json]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/json'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/colors.json'
+
+[templates.css]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/css'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/colors.css'
+
+# [templates.discord]
+# input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/discord'
+# output_path = '~/.cache/vesktop/themes/Material.theme.css'
+
+[templates.kdeglobals]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/kdeglobals'
+output_path = '~/.config/kdeglobals'
+
+[templates.kitty]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/kitty'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/kittyColors.conf'
+
+[templates.alacritty]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/alacritty'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/alacrittyColor.toml'
+
+[templates.yazi]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/yazi'
+output_path = '~/.config/yazi/theme.toml'
+
+[templates.colorscheme]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/colorscheme'
+output_path = '~/.local/share/color-schemes/Matugen.colors'
+
+[templates.hyprland]
+input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/hyprland'
+output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/hyprland/colors.conf'
+
+# [templates.rofi]
+# input_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/matugen/template/rofi'
+# output_path = '~/.cache/quickshell/Skeleton-Shell/ConfigFolder/colors.rasi'
+
+[templates.zed]
+input_path = '~/.config/matugen/template/zed'
+output_path = '~/.config/zed/themes/matugen.json'
+
+# pre_hook = 'cp {{image}} ~/.cache/quickshell/Skeleton-Shell/ConfigFolder/wallpaper'
+post_hook = "qs -p $HOME/.local/share/Skeleton-Shell ipc call wallpaper update"
+
+

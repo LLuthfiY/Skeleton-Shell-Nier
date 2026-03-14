@@ -1,0 +1,117 @@
+{
+    "appearance": {
+        "colorFromWallpaper": false,
+        "colorPath": "/home/lluth/.local/share/Skeleton-Shell/colors/user/Nier.json",
+        "darkMode": true,
+        "palette": {
+            "type": "scheme-tonal-spot"
+        },
+        "uiScale": 1
+    },
+    "background": {
+        "liveWallpaper": false,
+        "liveWallpaperPath": "file:///home/lluth/.config/config/livewallpaper",
+        "mute": true,
+        "wallpaperPath": "file:///home/lluth/Downloads/2b.jpg"
+    },
+    "bar": {
+        "background": "transparent",
+        "border": 0,
+        "borderColor": "primary",
+        "borderRadius": 16,
+        "borderScreen": false,
+        "centerWidgets": [
+            "Spectrum.qml"
+        ],
+        "endWidgets": [
+            "SysTray.qml",
+            "user--HyprPicker.qml",
+            "Separator.qml",
+            "Time.qml"
+        ],
+        "foreground": "primary",
+        "fullWidth": false,
+        "margin": 0,
+        "position": "left",
+        "screenList": [
+            "HDMI-A-1"
+        ],
+        "startWidgets": [
+            "Workspace.qml"
+        ],
+        "width": 899
+    },
+    "dashboard": {
+        "position": "right",
+        "widgets": [
+            "PowerAndSetting.qml",
+            "SystemMonitor.qml",
+            "NotificationHistory.qml--fill--",
+            "StyledCalendar.qml"
+        ]
+    },
+    "interactions": {
+        "scrolling": {
+            "fasterTouchpadScroll": false
+        }
+    },
+    "mediaPlayer": {
+        "enable": false
+    },
+    "modules": {
+        "aiChat": true,
+        "background": true,
+        "bar": true,
+        "barMenu": true,
+        "dashboard": true,
+        "enabled": [
+            "TimeDesktop.qml"
+        ],
+        "launcher": true,
+        "lockscreen": true,
+        "mediaPlayer": true,
+        "notification": true,
+        "osd": true,
+        "overview": true,
+        "popupCloser": true
+    },
+    "notification": {
+        "position": "bottomRight"
+    },
+    "services": {
+        "ai": {
+            "ollama": {
+                "address": "http://localhost:11434",
+                "apiKey": "sk-xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx",
+                "maxChatForContext": 10,
+                "model": "minimax-m2.5:cloud"
+            },
+            "provider": "ollama"
+        },
+        "geoLocation": {
+            "latitude": "-6.5944",
+            "longitude": "106.75"
+        },
+        "nightLight": {
+            "dayTemp": 5700,
+            "nightTemp": 4500,
+            "state": 0
+        },
+        "systemMonitor": {
+            "interval": 1000
+        }
+    },
+    "windowManager": {
+        "activeOpacity": 1,
+        "activeWindowBorderColor": "primary",
+        "applyConfigDelay": 1000,
+        "gapsIn": 8,
+        "gapsOut": 16,
+        "inactiveOpacity": 0.7,
+        "inactiveWindowBorderColor": "surface_container_high",
+        "windowBorderRadius": 0,
+        "windowBorderSize": 1,
+        "windowManager": "hyprland",
+        "workspaces": 8
+    }
+}

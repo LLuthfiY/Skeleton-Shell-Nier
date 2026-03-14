@@ -1,0 +1,12 @@
+module qs.modules.common.user
+
+#[singleton] <TypeName> <InitialVersion> <File>
+
+#Declares a QML object type to be made available by the module.
+
+#    [singleton] Optional. Used to declare a singleton type.
+#    <TypeName> is the type being made available
+#    <InitialVersion> is the module version for which the type is to be made available
+#    <File> is the (relative) file name of the QML file that defines the type
+
+singleton UserConfig 1.0 UserConfig.qml

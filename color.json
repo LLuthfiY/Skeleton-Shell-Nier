@@ -1,0 +1,104 @@
+{
+
+    "background": "#fff8f6",
+
+    "error": "#ba1a1a",
+
+    "error_container": "#ffdad6",
+
+    "inverse_on_surface": "#ffede9",
+
+    "inverse_primary": "#ffb4a4",
+
+    "inverse_surface": "#3d2c29",
+
+    "on_background": "#271815",
+
+    "on_error": "#ffffff",
+
+    "on_error_container": "#410002",
+
+    "on_primary": "#ffffff",
+
+    "on_primary_container": "#ffffff",
+
+    "on_primary_fixed": "#3e0500",
+
+    "on_primary_fixed_variant": "#8d1600",
+
+    "on_secondary": "#ffffff",
+
+    "on_secondary_container": "#4b0901",
+
+    "on_secondary_fixed": "#3e0500",
+
+    "on_secondary_fixed_variant": "#7c2d1d",
+
+    "on_surface": "#271815",
+
+    "on_surface_variant": "#5b403b",
+
+    "on_tertiary": "#ffffff",
+
+    "on_tertiary_container": "#ffffff",
+
+    "on_tertiary_fixed": "#261a00",
+
+    "on_tertiary_fixed_variant": "#5c4300",
+
+    "outline": "#8f7069",
+
+    "outline_variant": "#e3beb7",
+
+    "primary": "#a41b00",
+
+    "primary_container": "#c83518",
+
+    "primary_fixed": "#ffdad3",
+
+    "primary_fixed_dim": "#ffb4a4",
+
+    "scrim": "#000000",
+
+    "secondary": "#9b4432",
+
+    "secondary_container": "#fd9079",
+
+    "secondary_fixed": "#ffdad3",
+
+    "secondary_fixed_dim": "#ffb4a4",
+
+    "shadow": "#000000",
+
+    "source_color": "#c83518",
+
+    "surface": "#fff8f6",
+
+    "surface_bright": "#fff8f6",
+
+    "surface_container": "#ffe9e5",
+
+    "surface_container_high": "#fee2dc",
+
+    "surface_container_highest": "#f9dcd7",
+
+    "surface_container_low": "#fff0ee",
+
+    "surface_container_lowest": "#ffffff",
+
+    "surface_dim": "#f0d4ce",
+
+    "surface_tint": "#b5270a",
+
+    "surface_variant": "#ffdad3",
+
+    "tertiary": "#6c4f00",
+
+    "tertiary_container": "#8a6600",
+
+    "tertiary_fixed": "#ffdfa0",
+
+    "tertiary_fixed_dim": "#eec05c",
+
+"transparent": "transparent"
+}
