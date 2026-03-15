@@ -37,7 +37,7 @@
             "HDMI-A-1"
         ],
         "startWidgets": [
-            "Workspace.qml"
+            "user--Nier-Workspace.qml"
         ],
         "width": 899
     },
