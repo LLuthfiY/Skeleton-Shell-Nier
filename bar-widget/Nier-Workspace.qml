@@ -67,7 +67,7 @@ Item {
     Component {
         id: horizontalComp
         RowLayout {
-            spacing: 4
+            spacing: 0
             Repeater {
                 model: root.workspaces
                 delegate: workspaceItem
@@ -118,6 +118,7 @@ Item {
     Component {
         id: verticalComp
         ColumnLayout {
+            spacing: 0
             Repeater {
                 model: root.workspaces
                 delegate: workspaceItem
