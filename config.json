@@ -6,6 +6,7 @@
         "palette": {
             "type": "scheme-tonal-spot"
         },
+        "sourceColorIndex": 0,
         "uiScale": 1
     },
     "background": {
@@ -111,6 +112,7 @@
         "gapsOut": 16,
         "inactiveOpacity": 0.7,
         "inactiveWindowBorderColor": "surface_container_high",
+        "shadow": 0,
         "windowBorderRadius": 0,
         "windowBorderSize": 1,
         "windowManager": "hyprland",

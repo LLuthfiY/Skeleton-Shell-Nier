@@ -25,8 +25,8 @@
 @define-color outline_variant #b7b39f;
 @define-color primary #454138;
 @define-color primary_container #d8d4bc;
-@define-color primary_fixed #f0ecd4;
-@define-color primary_fixed_dim #c2bea6;
+@define-color primary_fixed #454138;
+@define-color primary_fixed_dim #6b675a;
 @define-color scrim #000000;
 @define-color secondary #2a6f97;
 @define-color secondary_container #b3d9ff;
@@ -74,8 +74,8 @@
 @define-color outline_variant #b7b39f;
 @define-color primary #454138;
 @define-color primary_container #d8d4bc;
-@define-color primary_fixed #f0ecd4;
-@define-color primary_fixed_dim #c2bea6;
+@define-color primary_fixed #454138;
+@define-color primary_fixed_dim #6b675a;
 @define-color scrim #000000;
 @define-color secondary #2a6f97;
 @define-color secondary_container #b3d9ff;
