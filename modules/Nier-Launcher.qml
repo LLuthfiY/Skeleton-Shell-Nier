@@ -128,6 +128,41 @@ Scope {
                                 id: listButtonHoverHandler
                                 cursorShape: Qt.PointingHandCursor
                             }
+                            // contentComponent: RowLayout {
+                            //     spacing: Variable.margin.small
+                            //     property bool toggled: launcherList.currentIndex === index || listButtonHoverHandler.hovered
+                            //     Rectangle {
+                            //         id: square
+                            //         width: Variable.uiScale(16)
+                            //         height: width
+                            //         color: Color.colors.primary
+                            //     }
+                            //     Text {
+                            //         id: appName
+                            //         text: modelData.name
+                            //         Layout.fillWidth: true
+                            //         font.family: Variable.font.family.main
+                            //         font.weight: Font.Normal
+                            //         color: Color.colors.primary
+                            //     }
+                            //     Timer {
+                            //         id: titleUnToggledTimer
+                            //         interval: 150
+                            //         repeat: false
+                            //         onTriggered: {
+                            //             appName.color = Color.colors.primary;
+                            //             square.color = Color.colors.primary;
+                            //         }
+                            //     }
+                            //     onToggledChanged: {
+                            //         if (toggled) {
+                            //             appName.color = Color.colors.surface;
+                            //             square.color = Color.colors.surface;
+                            //         } else {
+                            //             titleUnToggledTimer.running = true;
+                            //         }
+                            //     }
+                            // }
                         }
                         function execute() {
                             GlobalState.launcherOpen = false;

@@ -12,3 +12,4 @@ module qs.modules.common.user
 singleton UserConfig 1.0 UserConfig.qml
 BackgroundPattern 1.0 BackgroundPattern.qml
 ToggledListButton 1.0 ToggledListButton.qml
+NierSystemTrayItem 1.0 NierSystemTrayItem.qml

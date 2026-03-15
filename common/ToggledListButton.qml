@@ -1,4 +1,5 @@
 import QtQuick
+import QtQuick.Layouts
 import qs.modules.common.user
 import qs.modules.common
 
@@ -12,6 +13,8 @@ Rectangle {
     property int animationDuration: 200
     property string text: mData.name
     property color fontColor: Color.colors.on_surface
+    property int contentWidth: loader.implicitWidth
+    property int contentHeight: loader.implicitHeight
 
     color: "transparent"
     height: Variable.uiScale(48)
@@ -109,6 +112,7 @@ Rectangle {
     }
 
     Loader {
+        id: loader
         active: true
         sourceComponent: root.contentComponent
         anchors.verticalCenter: parent.verticalCenter
@@ -118,11 +122,26 @@ Rectangle {
 
     Component {
         id: contentComponent
-        Text {
-            text: root.text
-            font.family: Variable.font.family.main
-            font.weight: Font.Normal
-            color: root.fontColor
+        // Text {
+        //     text: root.text
+        //     font.family: Variable.font.family.main
+        //     font.weight: Font.Normal
+        //     color: root.fontColor
+        // }
+        RowLayout {
+            spacing: Variable.margin.small
+            Rectangle {
+                width: Variable.uiScale(16)
+                height: width
+                color: root.fontColor
+            }
+            Text {
+                text: root.text
+                Layout.fillWidth: true
+                font.family: Variable.font.family.main
+                font.weight: Font.Normal
+                color: root.fontColor
+            }
         }
     }
 }

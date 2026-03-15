@@ -24,7 +24,7 @@
             "Spectrum.qml"
         ],
         "endWidgets": [
-            "SysTray.qml",
+            "user--Nier-SystemTray.qml",
             "user--HyprPicker.qml",
             "Separator.qml",
             "Time.qml"
@@ -62,11 +62,12 @@
         "aiChat": true,
         "background": true,
         "bar": true,
-        "barMenu": true,
+        "barMenu": false,
         "dashboard": true,
         "enabled": [
             "TimeDesktop.qml",
-            "Nier-Launcher.qml"
+            "Nier-Launcher.qml",
+            "Nier-BarMenu.qml"
         ],
         "launcher": false,
         "lockscreen": true,
