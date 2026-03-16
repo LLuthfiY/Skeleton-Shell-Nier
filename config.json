@@ -16,7 +16,7 @@
         "wallpaperPath": "file:///home/lluth/Downloads/2b.jpg"
     },
     "bar": {
-        "background": "transparent",
+        "background": "surface",
         "border": 0,
         "borderColor": "primary",
         "borderRadius": 16,
@@ -31,7 +31,7 @@
             "Time.qml"
         ],
         "foreground": "primary",
-        "fullWidth": false,
+        "fullWidth": true,
         "margin": 0,
         "position": "left",
         "screenList": [
@@ -66,17 +66,19 @@
         "barMenu": false,
         "dashboard": true,
         "enabled": [
-            "TimeDesktop.qml",
             "Nier-Launcher.qml",
-            "Nier-BarMenu.qml"
+            "Nier-BarMenu.qml",
+            "TimeDesktop.qml",
+            "Nier-Notification-Popup.qml"
         ],
         "launcher": false,
         "lockscreen": true,
         "mediaPlayer": true,
-        "notification": true,
+        "notification": false,
         "osd": true,
         "overview": true,
-        "popupCloser": true
+        "popupCloser": true,
+        "settings": true
     },
     "notification": {
         "position": "bottomRight"
@@ -112,6 +114,7 @@
         "gapsOut": 16,
         "inactiveOpacity": 0.7,
         "inactiveWindowBorderColor": "surface_container_high",
+        "layout": "scrolling",
         "shadow": 0,
         "windowBorderRadius": 0,
         "windowBorderSize": 1,

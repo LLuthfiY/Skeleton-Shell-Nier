@@ -13,3 +13,5 @@ singleton UserConfig 1.0 UserConfig.qml
 BackgroundPattern 1.0 BackgroundPattern.qml
 ToggledListButton 1.0 ToggledListButton.qml
 NierSystemTrayItem 1.0 NierSystemTrayItem.qml
+NierNotificationItem 1.0 NierNotificationItem.qml
+NierAppIcon 1.0 NierAppIcon.qml
