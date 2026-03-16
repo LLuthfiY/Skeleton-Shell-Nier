@@ -40,6 +40,12 @@ Scope {
             //     active: true
             //     windows: [launcherWindow]
             // }
+            margins {
+                top: (Config.options.bar.position === "top" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
+                bottom: (Config.options.bar.position === "bottom" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
+                left: (Config.options.bar.position === "left" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
+                right: (Config.options.bar.position === "right" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
+            }
             anchors.top: true
             anchors.bottom: true
             anchors.left: Config.options.bar.position !== "right"
