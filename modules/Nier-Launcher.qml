@@ -25,10 +25,10 @@ Scope {
             property var application: AppSearch.fuzzyQuery(searchInput.text)
             // screen: Quickshell.screens.find(s => s.name === Hyprland.focusedMonitor?.name) ?? null
 
-            WlrLayershell.namespace: "quickshell:launcher"
+            WlrLayershell.namespace: "quickshell:NierLauncher"
             WlrLayershell.keyboardFocus: WlrKeyboardFocus.OnDemand
             // WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
-            WlrLayershell.layer: WlrLayer.Overlay
+            WlrLayershell.layer: WlrLayer.Top
             exclusiveZone: 0
 
             implicitWidth: Variable.uiScale(500)
@@ -40,6 +40,10 @@ Scope {
             //     active: true
             //     windows: [launcherWindow]
             // }
+            anchors.top: true
+            anchors.bottom: true
+            anchors.left: Config.options.bar.position !== "right"
+            anchors.right: Config.options.bar.position === "right"
 
             Rectangle {
                 anchors.fill: parent
