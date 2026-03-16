@@ -28,7 +28,7 @@ Scope {
             WlrLayershell.namespace: "quickshell:NierLauncher"
             WlrLayershell.keyboardFocus: WlrKeyboardFocus.OnDemand
             // WlrLayershell.keyboardFocus: WlrKeyboardFocus.None
-            WlrLayershell.layer: WlrLayer.Top
+            WlrLayershell.layer: WlrLayer.Overlay
             exclusiveZone: 0
 
             implicitWidth: Variable.uiScale(500)
