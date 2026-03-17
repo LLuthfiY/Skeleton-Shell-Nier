@@ -15,9 +15,9 @@ import qs.modules.common.functions
 Scope {
     PanelWindow {
         id: root
-        visible: (Notification.popupList.length > 0) && !GlobalState.screenLocked && !GlobalState.dashboardOpen
+        visible: GlobalState.dashboardOpen
 
-        WlrLayershell.namespace: "quickshell:notificationPopup"
+        WlrLayershell.namespace: "quickshell:NierDashboard"
         WlrLayershell.layer: WlrLayer.Overlay
         exclusiveZone: 0
         property string position: Config.options.notification.position.toLowerCase()
@@ -25,49 +25,38 @@ Scope {
         anchors {
             top: true
             bottom: true
-            left: position.includes("left")
-            right: position.includes("right")
+            left: true
+            right: true
+        }
+
+        Rectangle {
+            anchors.fill: parent
+            color: "transparent"
         }
 
         margins {
-            // top: (Config.options.bar.position === "top" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
-            // bottom: (Config.options.bar.position === "bottom" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
-            // left: (Config.options.bar.position === "left" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
-            // right: (Config.options.bar.position === "right" ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut
-
             top: (Config.options.bar.position === "top" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
             bottom: (Config.options.bar.position === "bottom" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
             left: (Config.options.bar.position === "left" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
             right: (Config.options.bar.position === "right" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
         }
 
-        mask: Region {
-            item: listview.contentItem
-        }
-
         color: "transparent"
         implicitWidth: Variable.size.notificationPopupWidth
 
-        ListView {
-            id: listview
-            spacing: Variable.margin.small
+        MouseArea {
             anchors.fill: parent
-            anchors.margins: 0
+            onClicked: GlobalState.dashboardOpen = false
+        }
 
-            model: ScriptModel {
-                values: Notification.popupList
-            }
-            delegate: NierNotificationItem {
-                height: 0
-                Component.onCompleted: height = content.height
-                Behavior on height {
-                    NumberAnimation {
-                        duration: Variable.animation.duration
-                        easing.type: Easing.OutQuad
-                    }
-                }
-                notificationObject: modelData
-            }
+        NierNotificationHistory {
+            anchors.right: parent.right
+            anchors.bottom: parent.bottom
+        }
+
+        NierMediaPlayer {
+            anchors.right: parent.right
+            anchors.top: parent.top
         }
     }
 }

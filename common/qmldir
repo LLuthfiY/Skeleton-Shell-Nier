@@ -15,3 +15,5 @@ ToggledListButton 1.0 ToggledListButton.qml
 NierSystemTrayItem 1.0 NierSystemTrayItem.qml
 NierNotificationItem 1.0 NierNotificationItem.qml
 NierAppIcon 1.0 NierAppIcon.qml
+NierNotificationHistory 1.0 NierNotificationHistory.qml
+NierMediaPlayer 1.0 NierMediaPlayer.qml

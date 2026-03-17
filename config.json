@@ -17,9 +17,9 @@
     },
     "bar": {
         "background": "surface",
-        "border": 0,
+        "border": 1,
         "borderColor": "primary",
-        "borderRadius": 16,
+        "borderRadius": 0,
         "borderScreen": false,
         "centerWidgets": [
             "Spectrum.qml"
@@ -32,7 +32,7 @@
         ],
         "foreground": "primary",
         "fullWidth": true,
-        "margin": 0,
+        "margin": 8,
         "position": "left",
         "screenList": [
             "HDMI-A-1"
@@ -64,12 +64,13 @@
         "background": true,
         "bar": true,
         "barMenu": false,
-        "dashboard": true,
+        "dashboard": false,
         "enabled": [
             "Nier-Launcher.qml",
             "Nier-BarMenu.qml",
             "TimeDesktop.qml",
-            "Nier-Notification-Popup.qml"
+            "Nier-Notification-Popup.qml",
+            "Nier-Dashboard.qml"
         ],
         "launcher": false,
         "lockscreen": true,
@@ -111,7 +112,7 @@
         "activeWindowBorderColor": "primary",
         "applyConfigDelay": 1000,
         "gapsIn": 8,
-        "gapsOut": 16,
+        "gapsOut": 8,
         "inactiveOpacity": 0.7,
         "inactiveWindowBorderColor": "surface_container_high",
         "layout": "scrolling",

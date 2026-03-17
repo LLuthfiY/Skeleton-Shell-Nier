@@ -16,6 +16,7 @@ Item {
     id: root
     property var notificationObject
     property bool pendingClose: notificationObject.pendingClose
+    property bool popup: true
     property var content: contentNotification
     width: Variable.size.notificationPopupWidth
     height: contentNotification.height
@@ -23,7 +24,7 @@ Item {
 
     onPendingCloseChanged: {
         opacity = 0;
-        implicitHeight = 0;
+        height = 0;
         closeTimer.start();
     }
 
@@ -31,7 +32,12 @@ Item {
         id: closeTimer
         interval: 210
         onTriggered: {
-            notificationObject.popup = false;
+            if (popup) {
+                notificationObject.popup = false;
+            }
+            if (!popup) {
+                Notification.discardNotification(notificationObject.notificationId);
+            }
         }
     }
 
@@ -45,7 +51,7 @@ Item {
             duration: 200
         }
     }
-    Behavior on implicitHeight {
+    Behavior on height {
         NumberAnimation {
             duration: 200
         }
@@ -61,7 +67,7 @@ Item {
             acceptedButtons: Qt.RightButton
             onTapped: {
                 root.opacity = 0;
-                root.implicitHeight = 0;
+                root.height = 0;
                 closeTimer.start();
             }
         }

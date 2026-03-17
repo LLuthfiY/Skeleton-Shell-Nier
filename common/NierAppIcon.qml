@@ -52,6 +52,7 @@ Item {
             Layout.preferredWidth: Variable.size.notificationAppIconSize
             Layout.preferredHeight: Variable.size.notificationAppIconSize
             Layout.alignment: Qt.AlignVCenter
+            fillMode: Image.PreserveAspectCrop
         }
     }
 
@@ -74,7 +75,7 @@ Item {
             color: "transparent"
             LucideIcon {
                 id: icon
-                icon: "message-circle"
+                icon: "message-square"
                 color: Color.colors.surface
                 font.pixelSize: Variable.font.pixelSize.huge
                 anchors.centerIn: parent
