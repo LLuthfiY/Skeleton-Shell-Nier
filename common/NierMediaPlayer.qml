@@ -27,7 +27,7 @@ Rectangle {
         anchors.centerIn: parent
         Rectangle {
             height: Variable.uiScale(100)
-            width: controls.width
+            Layout.fillWidth: true
             color: Color.colors.primary
             Rectangle {
                 id: spectrumRoot
