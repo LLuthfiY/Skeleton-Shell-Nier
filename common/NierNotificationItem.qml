@@ -123,7 +123,7 @@ Item {
                     font.bold: true
                     color: Color.colors.on_surface
                     clip: true
-                    Layout.preferredWidth: Variable.size.notificationPopupWidth - (Variable.uiScale(16))
+                    // Layout.preferredWidth: Variable.size.notificationPopupWidth - (Variable.uiScale(16))
                     wrapMode: Text.Wrap
                 }
 
