@@ -85,9 +85,8 @@ Rectangle {
                         id: art
                         width: Variable.uiScale(92)
                         height: Variable.uiScale(92)
-                        color: Color.colors.primary_container
+                        color: Color.colors.primary
 
-                        radius: Variable.radius.normal
                         Image {
                             anchors.fill: parent
                             source: modelData.trackArtUrl
