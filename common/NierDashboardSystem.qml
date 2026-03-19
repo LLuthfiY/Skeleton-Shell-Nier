@@ -2,6 +2,8 @@ import QtQuick
 import QtQuick.Layouts
 import QtQuick.Controls
 
+import Quickshell
+
 import qs.modules.common
 import qs.modules.common.user
 import qs.modules.common.widgets
