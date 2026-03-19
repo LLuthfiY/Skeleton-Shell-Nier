@@ -58,5 +58,15 @@ Scope {
             anchors.right: parent.right
             anchors.top: parent.top
         }
+
+        NierDashboardSystem {
+            anchors.left: parent.left
+            anchors.top: parent.top
+        }
+
+        NierCalendar {
+            anchors.left: parent.left
+            anchors.bottom: parent.bottom
+        }
     }
 }

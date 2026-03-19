@@ -17,3 +17,5 @@ NierNotificationItem 1.0 NierNotificationItem.qml
 NierAppIcon 1.0 NierAppIcon.qml
 NierNotificationHistory 1.0 NierNotificationHistory.qml
 NierMediaPlayer 1.0 NierMediaPlayer.qml
+NierDashboardSystem 1.0 NierDashboardSystem.qml
+NierCalendar 1.0 NierCalendar.qml
