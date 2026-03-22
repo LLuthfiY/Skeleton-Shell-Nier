@@ -57,7 +57,7 @@
         }
     },
     "mediaPlayer": {
-        "enable": true
+        "enable": false
     },
     "modules": {
         "aiChat": true,

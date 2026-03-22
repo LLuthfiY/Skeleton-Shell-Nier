@@ -27,7 +27,8 @@ Rectangle {
         anchors.centerIn: parent
         Rectangle {
             height: Variable.uiScale(100)
-            Layout.fillWidth: true
+            // Layout.fillWidth: true
+            width: controls.width
             color: Color.colors.primary
             Rectangle {
                 id: spectrumRoot
@@ -54,12 +55,14 @@ Rectangle {
         }
         SwipeView {
             id: controls
+            clip: true
             // currentIndex: Mpris.players.values.reduce((a, b, i) => b.isPlaying ? i : a, 0)
             currentIndex: Mpris.players.values.reduce((a, b, i) => b.isPlaying ? i : a, 0)
+            // orientation: Qt.Vertical
             // currentIndex: 0
             Repeater {
-                Layout.fillWidth: true
-                Layout.fillHeight: true
+                // Layout.fillWidth: true
+                // Layout.fillHeight: true
                 model: ScriptModel {
                     values: Mpris.players.values
                 }
@@ -67,7 +70,7 @@ Rectangle {
                     opacity: controls.currentIndex == index ? 1 : 0
                     property bool needUpdate: false
                     property bool afterOpen: true
-                    Layout.fillWidth: true
+                    // Layout.fillWidth: true
                     Layout.fillHeight: true
                     Layout.rightMargin: Variable.margin.normal
                     property real pos: 0
