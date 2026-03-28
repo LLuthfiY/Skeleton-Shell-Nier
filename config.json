@@ -70,13 +70,14 @@
             "Nier-BarMenu.qml",
             "TimeDesktop.qml",
             "Nier-Notification-Popup.qml",
-            "Nier-Dashboard.qml"
+            "Nier-Dashboard.qml",
+            "Nier-OSD.qml"
         ],
         "launcher": false,
         "lockscreen": true,
         "mediaPlayer": false,
         "notification": false,
-        "osd": true,
+        "osd": false,
         "overview": true,
         "popupCloser": true,
         "settings": true
