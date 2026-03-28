@@ -74,7 +74,7 @@ Scope {
 
             ColumnLayout {
                 anchors.centerIn: parent
-                spacing: Variable.uiScale(4)
+                spacing: 0
 
                 Rectangle {
                     color: "transparent"
@@ -112,23 +112,31 @@ Scope {
                     color: Color.colors.primary
                     width: Variable.uiScale(160)
                     height: Variable.uiScale(2)
+                    Layout.topMargin: Variable.uiScale(4)
                 }
                 Rectangle {
                     color: "transparent"
                     width: Variable.uiScale(160)
                     height: Variable.uiScale(8)
+                    Layout.topMargin: Variable.uiScale(2)
+                    Rectangle {
+                        width: Variable.uiScale(160)
+                        height: 1
+                        color: Color.colors.primary
+                    }
                     Rectangle {
                         anchors.left: parent.left
+
                         anchors.verticalCenter: parent.verticalCenter
-                        width: Variable.uiScale(8)
-                        height: Variable.uiScale(8)
+                        width: Variable.uiScale(4)
+                        height: Variable.uiScale(4)
                         color: Color.colors.primary
                     }
                     Rectangle {
                         anchors.right: parent.right
                         anchors.verticalCenter: parent.verticalCenter
-                        width: Variable.uiScale(8)
-                        height: Variable.uiScale(8)
+                        width: Variable.uiScale(4)
+                        height: Variable.uiScale(4)
                         color: Color.colors.primary
                     }
                 }
