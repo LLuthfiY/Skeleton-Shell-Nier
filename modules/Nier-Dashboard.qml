@@ -39,11 +39,19 @@ Scope {
             color: "transparent"
         }
 
+        property var windowMargin: Margin.windowMargin()
+
+        // margins {
+        //     top: (Config.options.bar.position === "top" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
+        //     bottom: (Config.options.bar.position === "bottom" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
+        //     left: (Config.options.bar.position === "left" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
+        //     right: (Config.options.bar.position === "right" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
+        // }
         margins {
-            top: (Config.options.bar.position === "top" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
-            bottom: (Config.options.bar.position === "bottom" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
-            left: (Config.options.bar.position === "left" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
-            right: (Config.options.bar.position === "right" || !Config.options.bar.borderScreen ? 0 : Config.options.bar.margin) + Config.options.windowManager.gapsOut + (Config.options.bar.borderScreen ? Config.options.bar.border : 0)
+            top: windowMargin.top
+            bottom: windowMargin.bottom
+            left: windowMargin.left
+            right: windowMargin.right
         }
 
         color: "transparent"

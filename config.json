@@ -112,7 +112,7 @@
         "activeOpacity": 1,
         "activeWindowBorderColor": "primary",
         "applyConfigDelay": 1000,
-        "gapsIn": 8,
+        "gapsIn": 4,
         "gapsOut": 8,
         "inactiveOpacity": 0.7,
         "inactiveWindowBorderColor": "surface_container_high",
