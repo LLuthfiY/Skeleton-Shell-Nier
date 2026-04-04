@@ -194,6 +194,12 @@ Item {
                     HoverHandler {
                         id: actionHoverHandler
                     }
+
+                    TapHandler {
+                        onTapped: {
+                            Notification.attemptInvokeAction(notificationObject.notificationId, modelData.identifier);
+                        }
+                    }
                 }
                 // delegate: Rectangle {
                 //
